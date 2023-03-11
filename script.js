@@ -15,7 +15,7 @@ var writePassword = function() {
 
 var userChoice = window.prompt("How many characters?")
 if (userChoice > 1) {
-window.prompts();
+window.prompts(generatePassword + index);
 
 // }  else if {
 //   (numbers) 
