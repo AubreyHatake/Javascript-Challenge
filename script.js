@@ -15,15 +15,9 @@ var writePassword = function() {
 
 var userChoice = window.prompt("How many characters?")
 if (userChoice > 1) {
-window.prompts(generatePassword + index);
+window.prompt(generatePassword + index.length);
 
-// }  else if {
-//   (numbers) 
-//     window.alert(numbers)
-
-  }
-
- }
+  } }
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
