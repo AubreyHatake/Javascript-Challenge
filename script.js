@@ -9,12 +9,13 @@ const numbers = "0123456789";
 const symbols = "!@#$%^&*_-+=";
 
 var options = [lowercase, uppercase, numbers, symbols];
-
+var index = Math.floor(Math.random() * options.length);
+var generatePassword = document.querySelector("#Password")
 var writePassword = function() { 
 
 var userChoice = window.prompt("How many characters?")
-if (userChoice === 5) {
-window.alert(userChoice + writePassword.length);
+if (userChoice > 1) {
+window.prompts();
 
 // }  else if {
 //   (numbers) 
