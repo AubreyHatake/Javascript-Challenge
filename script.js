@@ -16,9 +16,10 @@ function generatePassword () {
       prompt("Do you want numbers?");
       prompt("Do you want uppercase?");
       prompt("Do you want uppercase?");
+
+      return null;
     }
 
-    //  return null;
   
 
 
