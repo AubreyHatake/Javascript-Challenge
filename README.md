@@ -44,3 +44,6 @@ THEN the password is either displayed in an alert or written to the page
 For this site the user is able to generate a random password following prompts on the site. 
 
 ![Password Generator](Screenshot%202023-03-11%20211212.jpg)
+
+https://aubreyhatake.github.io/Javascript-Challenge/
+
