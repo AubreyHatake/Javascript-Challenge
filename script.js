@@ -1,20 +1,24 @@
 var generateBtn = document.querySelector("#generate");
-const lowercase = "abcdefghijklmnopqrstuvwxyz";
-const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const numbers = "0123456789"; 
-const symbols = "!@#$%^&*_-+=";
+var lowercase = "abcdefghijklmnopqrstuvwxyz";
+var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var numbers = "0123456789"; 
+var symbols = "!@#$%^&*_-+=";
 
+var options = [lowercase, uppercase, numbers, symbols];
 
 
 function generatePassword () {
-  var length = parseInt(prompt("What is the lenght of your password"))
+  var length = parseInt(prompt("How many Characters?"))
   if(isNaN(length)) {
     alert("Must choose a number");
-    return null;
+   }  else { (!isNaN(length));
+      alert(length + options);
+    }
+
+     return null;
   }
 
 
-}
 
 function getRandom (x) {
   var randomizer = Math.floor(Math.random() * x.length);
