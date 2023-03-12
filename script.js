@@ -12,7 +12,7 @@ function generatePassword () {
   if(isNaN(length)) {
     alert("Must choose a number");
    }  else { (!isNaN(length));
-      alert(length + options);
+      alert(length);
     }
 
      return null;
