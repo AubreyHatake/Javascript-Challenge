@@ -12,15 +12,22 @@ function generatePassword () {
   if(isNaN(length)) {
     alert("Must choose a number");
     return null;
-   }  else if (!isNaN(length, 8 < 128));
+   }  else if (!isNaN(length, 8 < 128));{
       var specialCharacters = confirm("Do you want special characters?");
       var number = confirm("Do you want numbers?");
       var uppercases = confirm("Do you want uppercase?");
       var lowercases =  confirm("Do you want lowercase?");
+  //  } else { (specialCharacters === True);
+  //   console.log(symbols); 
+  //   (number === true);
+  //   console.log(numbers);
+  //   (uppercases === true);
+  //   console.log(uppercase);
+  //   (lowercases === true);
+  //   console.log(lowercases);
 
-    
 
-    }
+   } }
 
   
 
