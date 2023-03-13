@@ -10,36 +10,47 @@ var options = [lowercase, uppercase, numbers, symbols];
 // The password will be generated in this function here,
 function generatePassword () {
   // in case the user does not choose a length, it will return the page and display the alert, Must choose a number.
-  var length = parseInt(prompt("How many Characters?"))
-  if(isNaN(length)) {
+  var passwordLength = parseInt(prompt("How many Characters?"))
+  if(isNaN(passwordLength)) {
     alert("Must choose a number");
     return null;
-    // if the user does choose a number between 8 and 128 it will continue to show prompts to confirm what the user wants to include in the password
-  }  else if (!isNaN(length = 8 < 128));{
+  
+    // if the user does choose a number between 8 and 128 it will continue to show prompts to confirm what the user wants to include in the password.
+    // user input will be stored as passwordLength
+  } else if (!isNaN(passwordLength));{
     var specialCharacters = confirm("Do you want special characters?");
     var number = confirm("Do you want numbers?");
     var uppercases = confirm("Do you want uppercase?");
     var lowercases =  confirm("Do you want lowercase?");
-    // if the user chooses special characters, the password will include symbols
-    if (specialCharacters === true) {
-      var password = (symbols.length);
-    }
+    // This if statement is if the uses chooses ok for all the prompts.
+    if (specialCharacters === true && number === true && uppercases === true && lowercases == true) {
+      var answer = ("!2@aQo6s#$fg6345sr%65735^hf&*ASDGERXC)hSFGGFHG13465B");
+      var password = answer; 
+     }
     // if the user wants both special characters and numbers, both will be included in the displayed password
-    if (number, specialCharacters === true) {
-      password = (symbols + numbers.length);
-    }
-    // if the user wants uppercase, special characters, and numbers, the displayed password will include all.
-    if (uppercases, specialCharacters, numbers === true) {
-      password = (symbols + numbers + uppercase.length);
-    }
+     if (uppercases !== true && lowercases !== true ) {
+      answer = ("029!@#$^4937@$%#@9482048!#^&^$892478436559%$%%&*&");
+      password = answer; 
+     }
+    // // if the user wants uppercase, special characters, and numbers, the displayed password will include all.
+     if (specialCharacters !== true && numbers !== true) {
+      answer = ("auSDFAdvnjdodnDASFKDFMNvniDAFDOJF");
+     password = answer;
+     }
     // if the user wants lowercases, special characters, numbers, and uppercases includes it will be in the displayed password at their desired length.
-    if (lowercases, specialCharacters, numbers, uppercases === true) {
-      password = (symbols + numbers + uppercase + lowercase.length);
-    }
-    // the return will display the generated password
-    return password;
+    if (lowercases !== true, numbers !== true) {
+      answer = ("SA@#$FSDVE$%@$#^#^%HFBFSYT%^WR@%^^&*()()OIYUJB")
+      password = answer;
+     }
+     if (specialCharacters !== true, uppercase !== true) {
+      answer = ("ja89704923hfhbfqe98hf389ff90sim03840mfjej9f403")
+      password = answer;
+     }
+    // // the return will display the generated password
+    return (password);
+     } 
   }
-} 
+ 
 
 
 
