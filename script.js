@@ -11,13 +11,15 @@ function generatePassword () {
   var length = parseInt(prompt("How many Characters?"))
   if(isNaN(length)) {
     alert("Must choose a number");
+    return null;
    }  else if (!isNaN(length, 8 < 128));
-      prompt("Do you want special characters?");
-      prompt("Do you want numbers?");
-      prompt("Do you want uppercase?");
-      prompt("Do you want uppercase?");
+      var specialCharacters = confirm("Do you want special characters?");
+      var number = confirm("Do you want numbers?");
+      var uppercases = confirm("Do you want uppercase?");
+      var lowercases =  confirm("Do you want lowercase?");
 
-      return null;
+    
+
     }
 
   
