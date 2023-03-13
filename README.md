@@ -1,5 +1,7 @@
 # Javascript-Challenge
+This is my deployed website.
 
+https://aubreyhatake.github.io/Javascript-Challenge/
 
 ## User Story
 AS AN employee with access to sensitive data
@@ -45,5 +47,4 @@ For this site the user is able to generate a random password following prompts o
 
 ![Password Generator](Screenshot%202023-03-11%20211212.jpg)
 
-https://aubreyhatake.github.io/Javascript-Challenge/
 
