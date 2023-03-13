@@ -27,29 +27,36 @@ function generatePassword () {
       var answer = ("!2@aQo6s#$fg6345sr%65735^hf&*ASDGERXC)hSFGGFHG13465B");
       var password = answer; 
      }
+     // All possibilities 
     // if the user wants both special characters and numbers, both will be included in the displayed password
      if (uppercases !== true && lowercases !== true ) {
       answer = ("029!@#$^4937@$%#@9482048!#^&^$892478436559%$%%&*&");
       password = answer; 
      }
-    // // if the user wants uppercase, special characters, and numbers, the displayed password will include all.
+    // // if the user wants uppercase and lowercase 
      if (specialCharacters !== true && numbers !== true) {
       answer = ("auSDFAdvnjdodnDASFKDFMNvniDAFDOJF");
      password = answer;
      }
-    // if the user wants lowercases, special characters, numbers, and uppercases includes it will be in the displayed password at their desired length.
+    // if the user wants symbols and uppercase
     if (lowercases !== true, numbers !== true) {
       answer = ("SA@#$FSDVE$%@$#^#^%HFBFSYT%^WR@%^^&*()()OIYUJB")
       password = answer;
      }
+     // if the user wants lowercase and numbers
      if (specialCharacters !== true, uppercase !== true) {
       answer = ("ja89704923hfhbfqe98hf389ff90sim03840mfjej9f403")
       password = answer;
      }
+     // a for loop to loop through the password length to get the users character value 
+     for (var i = 0, n = passwordLength.length; i < length; ++i) {
+      password += passwordLength.charAT(Math.floor(Math.random() * n));
+  }
+    }
     // // the return will display the generated password
     return (password);
      } 
-  }
+  
  
 
 
