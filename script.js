@@ -29,7 +29,7 @@ function generatePassword () {
      }
      // All possibilities 
     // if the user wants both special characters and numbers, both will be included in the displayed password
-     if (uppercases !== true && lowercases !== true ) {
+    if (uppercases !== true && lowercases !== true ) {
       answer = ("029!@#$^4937@$%#@9482048!#^&^$892478436559%$%%&*&");
       password = answer; 
      }
@@ -45,12 +45,14 @@ function generatePassword () {
      }
      // if the user wants lowercase and numbers
      if (specialCharacters !== true, uppercase !== true) {
-      answer = ("ja89704923hfhbfqe98hf389ff90sim03840mfjej9f403")
+      answer = ("a89704923hfhbfqe98hf389ff90sim03840mfjej9f403")
       password = answer;
      }
+     var pass = passwordLength;
+
      // a for loop to loop through the password length to get the users character value 
-     for (var i = 0, n = passwordLength.length; i < length; ++i) {
-      password += passwordLength.charAT(Math.floor(Math.random() * n));
+     for (let i = 8; i <= pass.length; ++i) {
+    
   }
     }
     // // the return will display the generated password
