@@ -48,15 +48,15 @@ function generatePassword () {
       answer = ("a89704923hfhbfqe98hf389ff90sim03840mfjej9f403")
       password = answer;
      }
-     var pass = passwordLength;
+    //  var password = passwordLength;
 
      // a for loop to loop through the password length to get the users character value 
-     for (let i = 8; i <= pass.length; ++i) {
+     for (let i = 8; i <= passwordLength.length; ++i) {
     
   }
     }
     // // the return will display the generated password
-    return (password);
+    return (password.length);
      } 
   
  
